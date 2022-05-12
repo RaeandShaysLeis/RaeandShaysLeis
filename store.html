@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Home</title>
+        <title>Order</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -17,9 +17,9 @@
         <link href="css/mystyles.css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
+        <header">
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-lower">Rae and Shay's Leis</span>
+                <span class="site-heading-lower bold">Rae and Shay's Leis</span>
             </h1>
         </header>
         <!-- Navigation-->
@@ -32,36 +32,37 @@
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Products</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="https://buy.stripe.com/3cscNTf7W6oz7le288">Order</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Order</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="page-section clearfix">
-            <div class="container">
-                <div class="intro">
-                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">The Original</span>
-                            <span class="section-heading-lower">2022 Graduation Leis</span>
-                        </h2>
-                        <p class="mb-3">We are a family-owned, El Segundo Based company who strives to supply every graduating elementary, middle, and high school student with their very own handcrafted Candy Leis!</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="https://buy.stripe.com/3cscNTf7W6oz7le288">Order Today</a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="page-section cta">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
                         <div class="cta-inner bg-faded text-center rounded">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-upper">Our Promise</span>
-                                <span class="section-heading-lower">To You</span>
-                            </h2>
-                            <p class="mb-0">When your child walks at their graduation, they will be beaming with pride not only because they finished a successful school year, but because they are loving their handmade (and delicious) lei!</p>
+                            <h1 class="orderhere">Order Here!</h1>
+                            <form 
+                            method ="post"
+                            action="https://script.google.com/macros/s/AKfycbw3JqqX9cBdxEUSyM78BX-jwda52EcJqhACYD4tuNwyTnJ1Ee0WQ5awHm9MdzhkZYIp/exec"
+                            >
+                                <span>Type</span><br>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">Original</label><br>
+                                <input type="radio" id="css" name="fav_language" value="CSS">
+                                <label for="css">Nut-free</label><br>
+                                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                <label for="javascript">Gourmet</label>
+                                <br><br>
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="fname" value="John"><br>
+                                <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lname" value="Doe"><br>
+                                <label for="address">Address:</label><br>
+                                <input type="text" id="adr" name="adr" value="123 Center Street"><br>
+                                <input type="submit" value="Submit">
+                              </form>
                         </div>
                     </div>
                 </div>
